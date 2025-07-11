@@ -11,15 +11,15 @@
       display: flex;
 /*       justify-content: center; */
 /*       align-items: center; */
-      background-color: #fffff1;
+      background-color: #ffffff;
     }
 
     .slide-wrapper {
-      animation: slide 3s ease-in-out infinite;
+      animation: slide 1s linear infinite;
     }
 
     .spin-wrapper {
-      animation: spin 0.5s linear infinite;
+      animation: spin 1s linear infinite;
     }
 
     .spin-wrapper img {
@@ -35,7 +35,7 @@
 
     @keyframes slide {
       0%   { transform: translateX(0); }
-      33%  { transform: translateX(100vw); translateY(100vh);}
+      33%  { transform: translateX(100vw)}
       100% { transform: translateX(0); }
     }
   </style>
