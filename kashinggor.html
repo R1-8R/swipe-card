@@ -13,19 +13,23 @@
       background-color: #fffff1;
     }
 
-    .animated-container {
+    .slide-wrapper {
       animation: slide 3s ease-in-out infinite;
     }
 
-    .spin-image {
-      width: 200px;
-      height: auto;
+    .spin-wrapper {
       animation: spin 0.5s linear infinite;
     }
 
+    .spin-wrapper img {
+      width: 200px;
+      height: auto;
+      display: block;
+    }
+
     @keyframes spin {
-      0%   { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
+      from { transform: rotate(0deg); }
+      to   { transform: rotate(360deg); }
     }
 
     @keyframes slide {
@@ -36,12 +40,13 @@
   </style>
 </head>
 <body>
-  <div class="animated-container">
-    <img 
-      src="https://th.bing.com/th/id/R.7249783a96051cc4220b5d9d6bf24b30?rik=iqKqFMqY7iDkUQ&riu=http%3a%2f%2fmorrisjfwong.com%2fblog%2fwp-content%2fuploads%2f2014%2f05%2fli-jia-cheng-image-01c.jpg&ehk=Y8pA4o%2bAMA5%2b5twGi%2f6HlQ7smU1e8AzeCEGY9M1waa4%3d&risl=&pid=ImgRaw&r=0" 
-      class="spin-image" 
-      alt="Li Jia Cheng"
-    />
+  <div class="slide-wrapper">
+    <div class="spin-wrapper">
+      <img 
+        src="https://th.bing.com/th/id/R.7249783a96051cc4220b5d9d6bf24b30?rik=iqKqFMqY7iDkUQ&riu=http%3a%2f%2fmorrisjfwong.com%2fblog%2fwp-content%2fuploads%2f2014%2f05%2fli-jia-cheng-image-01c.jpg&ehk=Y8pA4o%2bAMA5%2b5twGi%2f6HlQ7smU1e8AzeCEGY9M1waa4%3d&risl=&pid=ImgRaw&r=0" 
+        alt="Li Jia Cheng"
+      />
+    </div>
   </div>
 </body>
 </html>
