@@ -6,7 +6,8 @@
   <style>
     body {
       margin: 0;
-      height: 100vh;
+      height: 30vh;
+      width: auto;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -34,7 +35,7 @@
 
     @keyframes slide {
       0%   { transform: translateX(0); }
-      33%  { transform: translateX(100px); }
+      33%  { transform: translateX(100vw); translateY(100vh);}
       100% { transform: translateX(0); }
     }
   </style>
