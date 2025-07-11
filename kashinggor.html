@@ -14,7 +14,7 @@
     }
 
     .slide-wrapper {
-      animation: slide 1s ease-in-out infinite;
+      animation: slide 1s ease-in-out infinite alternate;
     }
 
     .spin-wrapper {
@@ -35,7 +35,7 @@
     @keyframes slide {
       0%   { transform: translateX(0); }
       33%  { transform: translateX(100vw); }
-      100% { transform: translateX(0); }
+      100% { transform: translateY(50vh); }
     }
   </style>
 </head>
