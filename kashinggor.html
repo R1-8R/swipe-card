@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Spinning Image</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f5f5f5;
+    }
+
+    .spin {
+      animation: spin 2s linear infinite;
+      width: 200px;
+      height: auto;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <img src="https://th.bing.com/th/id/R.7249783a96051cc4220b5d9d6bf24b30?rik=iqKqFMqY7iDkUQ&riu=http%3a%2f%2fmorrisjfwong.com%2fblog%2fwp-content%2fuploads%2f2014%2f05%2fli-jia-cheng-image-01c.jpg&ehk=Y8pA4o%2bAMA5%2b5twGi%2f6HlQ7smU1e8AzeCEGY9M1waa4%3d&risl=&pid=ImgRaw&r=0" class="spin" alt="Li Jia Cheng" />
+</body>
+</html>
