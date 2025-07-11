@@ -5,14 +5,16 @@
   <title>Spinning & Sliding Image</title>
   <style>
     body {
-       margin: 0;
+      margin: 0;
       height: 100vh;
       display: flex;
-      background-color: #ffffff;
+/*       justify-content: center;
+      align-items: center; */
+      background-color: #fffff1;
     }
 
     .slide-wrapper {
-      animation: slide 1s linear infinite alternate;
+      animation: slide 1s ease-in-out infinite;
     }
 
     .spin-wrapper {
@@ -20,7 +22,7 @@
     }
 
     .spin-wrapper img {
-      width: 10px;
+      width: 200px;
       height: auto;
       display: block;
     }
@@ -32,7 +34,7 @@
 
     @keyframes slide {
       0%   { transform: translateX(0); }
-      33%  { transform: translateX(95vw); }
+      33%  { transform: translateX(100vw); }
       100% { transform: translateX(0); }
     }
   </style>
