@@ -51,19 +51,26 @@
       margin: 0;
       font-family: sans-serif;
     }
-    .button-container {
-      text-align: center;
-    }
-    .youtube-button {
-/*       padding: 12px 24px; */
-      font-size: 16px;
-      color: white;
-      background-color: #FF0000;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      text-decoration: none;
-    }
+.button-container {
+  text-align: center;
+  width: 100%;
+}
+
+.youtube-button {
+  display: inline-block;
+  width: 100%;
+  max-width: 300px; /* Optional: limits button size */
+  padding: 12px 24px;
+  font-size: 16px;
+  color: white;
+  background-color: #FF0000;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
     .youtube-button:hover {
       background-color: #cc0000;
     }
